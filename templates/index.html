@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicações com drones para monitoramento, agricultura, e mais.">
+    <title>DroneApp - Soluções com Drones</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Página Inicial</a>
+        <a href="/servicos">Serviços</a>
+    </nav>
+    
+    <header>
+        <div class="container">
+            <h1>DroneApp</h1>
+            <nav>
+                <a href="#services">Serviços</a>
+                <a href="#contact">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Soluções Inteligentes com Drones</h2>
+            <p>Explore o futuro das tecnologias aéreas para o seu negócio.</p>
+            <button><a href="#contact">Saiba Mais</a></button>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h3>Nossos Serviços</h3>
+            <div class="service">
+                <h4>Monitoramento de Terrenos</h4>
+                <p>Imagens aéreas detalhadas para inspeções e análises.</p>
+            </div>
+            <div class="service">
+                <h4>Agricultura de Precisão</h4>
+                <p>Drones para mapear e otimizar lavouras.</p>
+            </div>
+            <div class="service">
+                <h4>Segurança e Vigilância</h4>
+                <p>Monitoramento em tempo real com tecnologia de ponta.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h3>Entre em Contato</h3>
+            <p>Tem interesse em nossos serviços? Entre em contato conosco!</p>
+            <form action="/submit" method="POST">
+                <input type="text" name="name" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="message" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
